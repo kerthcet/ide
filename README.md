@@ -1,5 +1,5 @@
 # ide
-vim && zsh && iterm2 && tmux
+Intergation tools including vim && zsh && iterm2 && tmux.
 
 ## Vim
 ![Screenshot](https://raw.githubusercontent.com/yaphetsglhf/ide/master/screenshots/vim.png)

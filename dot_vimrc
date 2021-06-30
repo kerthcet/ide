@@ -61,7 +61,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'Raimondi/delimitMate'                          "自动补全括号，跳出括号
 	Plug 'vim-scripts/YankRing.vim'                      "命令剪贴板
 	Plug 'ryanoasis/vim-devicons'                        "文件icon
-	" Plug 'terryma/vim-multiple-cursors'
 	
 	" Python
 	Plug 'python-mode/python-mode'                       "vim for python
@@ -72,15 +71,8 @@ call plug#begin('~/.vim/plugged')
 	" vim cmd
 	Plug 'jalvesaq/vimcmdline'
 
-	" json
-	" Plug 'elzr/vim-json'
-
-	" Yaml
-	" Plug 'stephpy/vim-yaml'
 	Plug 'hashivim/vim-terraform'
 
-	" kubernetes
-	Plug 'andrewstuart/vim-kubernetes'
 	call plug#end() 
 
 
@@ -95,36 +87,11 @@ set cursorcolumn                "突出显示当前列"
 set langmenu=zh_CN.UTF-8        "显示中文菜单
 syntax on                       "开启语法高亮
 " let g:one_allow_italics = 1   "注释加背景
-"
-" 主题ayu -------------------------------------
-" set termguicolors     " enable true colors support
-" let ayucolor="light"  " for light version of theme
-" let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="light"   " for dark version of theme
-" colorscheme ayu
-"
-" 主题vim-one -------------------------------------
-" let g:airline_theme='one'
-" colorscheme one
-" set background=light
-" let g:one_allow_italics = 1 " I love italic for comments
 
 " 主题onedark -------------------------------------
 " colorscheme onedark
 " let g:airline_theme='onedark'
 " set background=dark " for the dark version
-"
-" 主题cool -------------------------------------
-" let g:airline_theme='cool'
-"
-" 主题nord -------------------------------------
-" colorscheme nord
-"
-" 主题 vim-two-firewatch
-" set background=dark " or light if you prefer the light version
-" let g:two_firewatch_italics=1
-" colo two-firewatch
-" let g:airline_theme='twofirewatch' " if you have Airline installed and want the associated theme
 "
 " 主题 gruvbox ------------------------------------- 
 colorscheme gruvbox
@@ -375,7 +342,6 @@ let NERDTreeShowHidden=1
 let g:UltiSnipsExpandTrigger = "<leader><CR>"
 let g:UltiSnipsJumpForwardTrigger = "<C-j>"          "<C-j>跳转的到下一个代码块可编辑区
 let g:UltiSnipsJumpBackwardTrigger = "<C-k>"         "<C-k>跳转到上一个代码块可编辑区
-" let g:UltiSnipsSnippetDirectories = ["UltiSnips", "~/.vim/mysnippets"]
 
 " YouCompleteMe -------------------------------------
 " YCM, 临时解决vim8.1 跟python3.7不兼容(https://github.com/vim/vim/issues/3117)
@@ -414,11 +380,6 @@ let g:ycm_semantic_triggers =  {
   \   'erlang' : [':'],
   \ }
 
-" 补全菜单中各项之间进行切换和选取：默认使用tab  s-tab进行上下切换，使用enter选取。可进行自定义设置：
-" let g:ycm_key_list_select_completion=['<c-n>']
-" let g:ycm_key_list_select_completion = ['<Down>']      " 通过上下键在补全菜单中进行切换
-" let g:ycm_key_list_previous_completion=['<c-p>']
-" let g:ycm_key_list_previous_completion = ['<Up>']
 "
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"    " 回车即选中补全菜单中的当前项
 

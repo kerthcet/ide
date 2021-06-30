@@ -74,7 +74,6 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-# eval $(thefuck --alias)
 
 # nvm 会增加zsh启动时间，非常卡
 function loadnvm(){
@@ -85,26 +84,6 @@ function loadnvm(){
 # Load RVM into a shell session *as a function*
 function loadrvm(){
 }
-
-# 隐藏该功能，影响cd进入时间
-# auto run pipenv shell when enterin a project
-# function auto_pipenv_shell {
-#     if [ ! -n "${PIPENV_ACTIVE+1}" ]; then
-#         if [ -f "Pipfile" ] ; then
-#             pipenv shell
-#         fi
-#     fi
-# }
-
-# function cd {
-#     builtin cd "$@"
-#     auto_pipenv_shell
-# }
-
-# 创建vim undo文件夹
-# if [ ! -d ~/.vim/undodir  ];then
-#   mkdir ~/.vim/undodir
-# fi
 
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
@@ -118,6 +97,3 @@ bindkey "^]" history-beginning-search-backward
 bindkey "^[" history-beginning-search-forward
 
 source ~/.bash_profile
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/usr/local/opt/go@1.14/bin:$PATH"

@@ -6,7 +6,7 @@ Intergation tools including vim && zsh && iterm2 && tmux.
 
 * Language Support:  Golang, Python, Ruby and so on.
 * Theme: gruvbox or onedark.
-* Autocomplete: YCM. 
+* Autocomplete: tabnine. 
 
 ## Iterm2
 ![Screenshot](https://raw.githubusercontent.com/yaphetsglhf/ide/master/screenshots/iterm2.png)
